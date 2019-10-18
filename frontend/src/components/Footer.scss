@@ -1,0 +1,46 @@
+:root {
+  --roseT: rgba(234, 0, 150, 0);
+  --rose: rgba(234, 0, 150, 1);
+  --bleu: rgba(125, 249, 255, 1);
+  --bleuT: rgba(125, 249, 255, 0);
+  font-family: "Roboto black";
+  background-color: #000510;
+}
+
+.LinearGradient {
+  background: linear-gradient(
+    to right,
+    var(--roseT),
+    var(--rose),
+    var(--bleu),
+    var(--bleuT)
+  );
+  width: 100vw;
+  height: 3px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.4em;
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    margin: 5px;
+  }
+  .heart {
+    color: rgb(177, 4, 4);
+    font-size: 1.5em;
+  }
+  img {
+    width: 25%;
+  }
+  img:hover {
+    width: 30%;
+  }
+}
