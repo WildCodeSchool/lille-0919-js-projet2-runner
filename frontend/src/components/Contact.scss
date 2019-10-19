@@ -1,0 +1,48 @@
+body {
+  background-color: #000510;
+}
+form {
+  width: 450px * 2;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.top-form {
+  display: flex;
+  justify-content: space-around;
+}
+
+#select {
+  width: 442px;
+  height: 40px;
+  border-radius: 5px;
+  z-index: 4;
+  background-color: white;
+}
+
+#email {
+  width: 442px;
+  height: 35px;
+  border-radius: 5px;
+  z-index: 4;
+  background-color: white;
+}
+
+#message {
+  width: 442px * 2;
+  height: 300px;
+  margin-top: 10px;
+  z-index: 4;
+  background-color: white;
+}
+
+#sendButton {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+
+  img {
+    width: 156px;
+    height: 85px;
+  }
+}
