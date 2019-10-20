@@ -5,26 +5,28 @@ function Footer() {
     <footer>
       <div className="LinearGradient"></div>
       <div className="footer">
-        <div className="nav">
-          <p>Copyright © 2019</p>
-          <p>
-            Made with <span className="heart">♥</span>
-          </p>
-          <p>Mentions légales</p>
-          <p>Confidentialité</p>
-          <p>Cookies</p>
+        <div>
+          <ul className="nav">
+            <li>Copyright © 2019</li>
+            <li>
+              Made with <span className="heart">♥</span>
+            </li>
+            <li>Mentions légales</li>
+            <li>Confidentialité</li>
+            <li>Cookies</li>
+          </ul>
         </div>
 
-        <div className="Nav-icon">
+        <div>
           <img
-            src={"facebook_icon.png"}
-            className="Facebook-logo"
+            src="facebook_icon.png"
+            className="facebook-logo"
             alt="Facebook logo"
           />
-          <img src={"insta_icon.png"} className="Insta-logo" alt="Insta logo" />
+          <img src="insta_icon.png" className="insta-logo" alt="Insta logo" />
           <img
-            src={"twitter_icon.png"}
-            className="Twitter-logo"
+            src="twitter_icon.png"
+            className="twitter-logo"
             alt="Twitter logo"
           />
         </div>

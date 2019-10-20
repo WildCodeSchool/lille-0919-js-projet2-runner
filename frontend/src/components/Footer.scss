@@ -4,9 +4,9 @@
   --bleu: rgba(125, 249, 255, 1);
   --bleuT: rgba(125, 249, 255, 0);
   font-family: "Roboto black";
-  background-color: #000510;
+  background: rgba(0, 5, 16, 1);
 }
-
+/*ligne dégradé */
 .LinearGradient {
   background: linear-gradient(
     to right,
@@ -21,26 +21,30 @@
 
 .footer {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
   color: white;
   font-weight: bold;
   font-size: 1.4em;
   .nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 100vw;
-    margin: 5px;
+    width: 80vw;
   }
   .heart {
-    color: rgb(177, 4, 4);
+    color: rgba(241, 61, 55, 1);
     font-size: 1.5em;
   }
-  img {
+
+  .facebook-logo,
+  .insta-logo,
+  .twitter-logo {
     width: 25%;
   }
-  img:hover {
-    width: 30%;
+  .facebook-logo:hover,
+  .insta-logo:hover,
+  .twitter-logo:hover {
+    width: 28%;
   }
 }
