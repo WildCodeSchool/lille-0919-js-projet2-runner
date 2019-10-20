@@ -1,0 +1,16 @@
+header {
+  display: flex;
+  justify-content: center;
+
+  .nav_bar {
+    display: flex;
+    justify-content: space-around;
+    width: 75vw;
+    img {
+      width: 20vw;
+    }
+    img:hover {
+      width: 22vw;
+    }
+  }
+}
