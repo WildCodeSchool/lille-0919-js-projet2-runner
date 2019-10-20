@@ -4,7 +4,7 @@ import "./Header.scss";
 function Header() {
   return (
     <header>
-      <img src={"banner.png"} className="Header-logo" alt="logo" />
+      <img src="banner.png" className="Header-logo" alt="logo" />
     </header>
   );
 }
