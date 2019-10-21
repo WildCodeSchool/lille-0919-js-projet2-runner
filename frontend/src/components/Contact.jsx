@@ -32,43 +32,35 @@ class Contact extends React.Component {
     return (
       <form className="ContactForm">
         <div className="top-form">
-          <label>
-            <input
-              type="email"
-              value={this.state.value}
-              onChange={this.handleInput}
-              placeholder="Your email adresse...."
-              id="email"
-            />
-          </label>
+          <input
+            type="email"
+            value={this.state.value}
+            onChange={this.handleInput}
+            placeholder="Your email adresse...."
+            id="email"
+          />
 
-          <label>
-            <select
-              value={this.state.select}
-              onChange={this.handleSelect}
-              id="select"
-            >
-              <option value="object">Your Object ?</option>
-              <option value="feedback">FeedBack</option>
-              <option value="bugQuestion">Bug/Question</option>
-            </select>
-          </label>
+          <select
+            value={this.state.select}
+            onChange={this.handleSelect}
+            id="select"
+          >
+            <option value="object">Your Object ?</option>
+            <option value="feedback">FeedBack</option>
+            <option value="bugQuestion">Bug/Question</option>
+          </select>
         </div>
 
-        <label>
-          <textarea
-            type="text"
-            value={this.state.textarea}
-            onChange={this.handleTextarea}
-            placeholder="Your message...."
-            id="message"
-          />
-        </label>
+        <textarea
+          type="text"
+          value={this.state.textarea}
+          onChange={this.handleTextarea}
+          placeholder="Your message...."
+          id="message"
+        />
 
         <div id="sendButton">
-          <button>
-            <img src="send_button.png" alt="sendButton" />
-          </button>
+          <img src="send_button.png" alt="sendButton" />
         </div>
       </form>
     );
