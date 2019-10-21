@@ -28,9 +28,9 @@
   font-size: 1.4em;
   .nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 80vw;
+    width: 85vw;
   }
   .heart {
     color: rgba(241, 61, 55, 1);
@@ -40,11 +40,12 @@
   .facebook-logo,
   .insta-logo,
   .twitter-logo {
-    width: 25%;
+    transform: scale(0.9);
+    height: 80%;
   }
   .facebook-logo:hover,
   .insta-logo:hover,
   .twitter-logo:hover {
-    width: 28%;
+    transform: scale(1);
   }
 }
