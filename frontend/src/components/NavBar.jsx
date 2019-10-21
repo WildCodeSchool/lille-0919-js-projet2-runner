@@ -1,10 +1,10 @@
 import React from "react";
-import "./Nav_bar.scss";
+import "./NavBar.scss";
 
 function Nav_bar() {
   return (
     <header>
-      <div className="nav_bar">
+      <div className="navBar">
         <img
           src="leaderboard_button.png"
           className="leaderboard_button"
