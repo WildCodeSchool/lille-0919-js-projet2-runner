@@ -1,0 +1,16 @@
+.map {
+  position: relative;
+  display: flex;
+  flex-flow: wrap row;
+  width: 832px;
+  height: 256px;
+  border-radius: 40px;
+  margin: 10px auto;
+  background-color: aqua;
+
+  div {
+    border: solid 1px black;
+    width: 62px;
+    height: 62px;
+  }
+}
