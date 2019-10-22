@@ -1,5 +1,5 @@
 import React from "react";
-import "./Score.scss";
+import "./LeaderBoard.scss";
 
 function Score() {
   return (
@@ -24,4 +24,4 @@ function Score() {
   );
 }
 
-export default Score;
+export default LeaderBoard;
