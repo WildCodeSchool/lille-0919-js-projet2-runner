@@ -1,10 +1,10 @@
 import React from "react";
 import "./LeaderBoard.scss";
 
-function Score() {
+function LeaderBoard() {
   return (
     <div className="leaderBoard">
-      <div className="LeaderBoardLeft">
+      <div className="leaderBoardLeft">
         <img src="players_title.png" alt="Players Title" />
         <ol>
           <li id="player1">Adrien</li>
@@ -12,7 +12,7 @@ function Score() {
           <li id="player3">Léo</li>
         </ol>
       </div>
-      <div className="LeaderBoardRight">
+      <div className="leaderBoardRight">
         <img src="score_title.png" alt="Score Title" />
         <ul>
           <li>978846</li>
