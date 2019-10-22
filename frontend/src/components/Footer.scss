@@ -1,0 +1,51 @@
+:root {
+  --roseT: rgba(234, 0, 150, 0);
+  --rose: rgba(234, 0, 150, 1);
+  --bleu: rgba(125, 249, 255, 1);
+  --bleuT: rgba(125, 249, 255, 0);
+  font-family: "Roboto black";
+  background: rgba(0, 5, 16, 1);
+}
+/*ligne dégradé */
+.LinearGradient {
+  background: linear-gradient(
+    to right,
+    var(--roseT),
+    var(--rose),
+    var(--bleu),
+    var(--bleuT)
+  );
+  width: 100vw;
+  height: 3px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  font-weight: bold;
+  font-size: 1.4em;
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 85vw;
+  }
+  .heart {
+    color: rgba(241, 61, 55, 1);
+    font-size: 1.5em;
+  }
+
+  .facebook-logo,
+  .insta-logo,
+  .twitter-logo {
+    transform: scale(0.9);
+    height: 80%;
+  }
+  .facebook-logo:hover,
+  .insta-logo:hover,
+  .twitter-logo:hover {
+    transform: scale(1);
+  }
+}
