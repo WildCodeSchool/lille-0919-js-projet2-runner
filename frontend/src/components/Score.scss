@@ -1,0 +1,55 @@
+:root {
+  --roseT: rgba(234, 0, 150, 0);
+  --rose: rgba(234, 0, 150, 1);
+  --bleu: rgba(125, 249, 255, 1);
+  --bleuT: rgba(125, 249, 255, 0);
+  --white: rgba(255, 255, 255, 1);
+  font-family: "Roboto black";
+  background: rgba(0, 0, 6, 1);
+}
+
+.leaderBoard {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: center;
+
+  img {
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    align-self: center;
+  }
+
+  .LeaderBoardLeft {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .LeaderBoardRight {
+    display: flex;
+    flex-direction: column;
+  }
+
+  li {
+    color: var(--white);
+    font-size: xx-large;
+    padding: 20px;
+    text-align: center;
+  }
+
+  ul {
+    li {
+      padding: 25px;
+    }
+  }
+  #player1 {
+    list-style: georgian outside url("player1.svg");
+  }
+  #player2 {
+    list-style: georgian outside url("player2.svg");
+  }
+  #player3 {
+    list-style: georgian outside url("player3.svg");
+  }
+}
