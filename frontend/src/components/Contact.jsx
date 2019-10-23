@@ -36,7 +36,7 @@ class Contact extends React.Component {
             type="email"
             value={this.state.value}
             onChange={this.handleInput}
-            placeholder="Your email adresse...."
+            placeholder="Your email adress...."
             id="email"
           />
 
