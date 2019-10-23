@@ -36,7 +36,7 @@ class Contact extends React.Component {
             type="email"
             value={this.state.value}
             onChange={this.handleInput}
-            placeholder="Your email adress...."
+            placeholder="Your email address...."
             id="email"
           />
 
@@ -45,9 +45,10 @@ class Contact extends React.Component {
             onChange={this.handleSelect}
             id="select"
           >
-            <option value="object">Your Object ?</option>
+            <option value="object" id="object">Your Object ?</option>
             <option value="feedback">FeedBack</option>
-            <option value="bugQuestion">Bug/Question</option>
+            <option value="question">Questions</option>
+            <option value="bugQuestion">Bug</option>
           </select>
         </div>
 
