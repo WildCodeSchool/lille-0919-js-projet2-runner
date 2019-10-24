@@ -6,9 +6,11 @@ class Contact extends React.Component {
     super(props);
 
     // Value allocation displayed basic ********
-    this.state = { input: "" };
-    this.state = { select: "object" };
-    this.state = { textarea: "" };
+    this.state = {
+      input: "",
+      select: "object",
+      textarea: ""
+    };
 
     this.handleTextarea = this.handleTextarea.bind(this);
     this.handleInput = this.handleInput.bind(this);
@@ -45,7 +47,9 @@ class Contact extends React.Component {
             onChange={this.handleSelect}
             id="select"
           >
-            <option value="object" id="object">Your Object ?</option>
+            <option value="object" id="object">
+              Your Object ?
+            </option>
             <option value="feedback">FeedBack</option>
             <option value="question">Questions</option>
             <option value="bugQuestion">Bug</option>
