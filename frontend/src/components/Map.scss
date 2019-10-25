@@ -3,10 +3,12 @@
   display: flex;
   flex-flow: wrap row;
   width: 832px;
-  height: 256px;
+  height: 320px;
   border-radius: 40px;
   margin: 10px auto;
   background-color: aqua;
+  z-index: 1;
+  overflow: hidden;
 
   div {
     border: solid 1px black;
