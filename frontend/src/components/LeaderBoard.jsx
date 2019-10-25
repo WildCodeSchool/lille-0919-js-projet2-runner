@@ -4,21 +4,25 @@ import "./LeaderBoard.scss";
 function LeaderBoard() {
   return (
     <div className="leaderBoard">
-      <div className="leaderBoardLeft">
+      <div className="leaderBoardTitle">
         <img src="players_title.png" alt="Players Title" />
-        <ol>
-          <li id="player1">Adrien</li>
-          <li id="player2">Blandine</li>
-          <li id="player3">Léo</li>
-        </ol>
-      </div>
-      <div className="leaderBoardRight">
         <img src="score_title.png" alt="Score Title" />
-        <ul>
-          <li>978846</li>
-          <li>678541</li>
-          <li>559743</li>
-        </ul>
+      </div>
+      <div className="leaderBoardItems">
+        <ol>
+          <li>
+            <span>Adrien</span>
+            <div>978846</div>
+          </li>
+          <li>
+            <span>Blandine</span>
+            <div>678541</div>
+          </li>
+          <li>
+            <span>Léo</span>
+            <div>559743</div>
+          </li>
+        </ol>
       </div>
     </div>
   );

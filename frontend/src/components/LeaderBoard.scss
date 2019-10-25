@@ -9,47 +9,46 @@
 }
 
 .leaderBoard {
-  display: flex;
-  flex-direction: row;
   width: 100vw;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  img {
-    width: 200px;
-    height: 100px;
-    padding: 10px;
-    align-self: center;
-  }
-
-  .leaderBoardLeft {
+  .leaderBoardTitle {
     display: flex;
-    flex-direction: column;
-  }
+    justify-content: space-between;
+    width: 30%;
 
-  .leaderBoardRight {
-    display: flex;
-    flex-direction: column;
-  }
-
-  li {
-    color: var(--white);
-    font-size: xx-large;
-    padding: 20px;
-    text-align: center;
-  }
-
-  ul {
-    li {
-      padding: 25px;
+    img {
+      width: 200px;
+      height: 100px;
+      padding: 10px;
+      align-self: center;
     }
   }
-  #player1 {
-    list-style: georgian outside url("player1.svg");
-  }
-  #player2 {
-    list-style: georgian outside url("player2.svg");
-  }
-  #player3 {
-    list-style: georgian outside url("player3.svg");
+
+  .leaderBoardItems {
+    width: 30%;
+    ol {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+
+      li {
+        color: var(--white);
+        font-size: 200%;
+        width: 85%;
+        margin: auto;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        span {
+          max-width: 130px;
+        }
+      }
+    }
   }
 }
