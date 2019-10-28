@@ -17,7 +17,7 @@
   .leaderBoardTitle {
     display: flex;
     justify-content: space-between;
-    width: 30%;
+    width: 35%;
 
     img {
       width: 200px;
@@ -30,24 +30,37 @@
   .leaderBoardItems {
     width: 30%;
     ol {
+      width: 100%;
+      counter-reset: my-awesome-counter;
+      list-style: none;
       display: flex;
       flex-direction: column;
-      width: 100%;
-      justify-content: center;
 
       li {
+        counter-increment: my-awesome-counter;
         color: var(--white);
-        font-size: 200%;
-        width: 85%;
-        margin: auto;
-        margin-bottom: 30px;
+        font-size: xx-large;
         display: flex;
+        max-width: 100%;
         justify-content: space-between;
         align-items: center;
+      }
 
-        span {
-          max-width: 130px;
-        }
+      .positionName::before {
+        content: counter(my-awesome-counter);
+        color: var(--white);
+        font-size: 1.1em;
+        font-weight: bold;
+        --size: 64px;
+        left: calc(var(--size) - 10px);
+        line-height: var(--size);
+        width: var(--size);
+        height: var(--size);
+        top: 0;
+        transform: rotate(-10deg);
+        border-radius: 50%;
+        box-shadow: 1px 1px 0 #999;
+        margin-right: 30px;
       }
     }
   }

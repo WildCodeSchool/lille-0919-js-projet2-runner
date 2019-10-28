@@ -11,15 +11,15 @@ function LeaderBoard() {
       <div className="leaderBoardItems">
         <ol>
           <li>
-            <span>Adrien</span>
+            <div className="positionName">Adrien</div>
             <div>978846</div>
           </li>
           <li>
-            <span>Blandine</span>
+            <div className="positionName">Blandine</div>
             <div>678541</div>
           </li>
           <li>
-            <span>Léo</span>
+            <div className="positionName">Léo</div>
             <div>559743</div>
           </li>
         </ol>
