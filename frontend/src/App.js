@@ -1,11 +1,17 @@
 import React from "react";
 import "./components/reset.css";
-import Game from "./components/Game";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div className="App">
-      <Game />
+    
+      <Header />
+      <NavBar />
+      <Footer />
+
     </div>
   );
 }
