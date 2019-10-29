@@ -8,6 +8,7 @@
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0",
+    "reactjs-popup": "^1.5.0",
     "scss": "^0.2.4"
   },
   "scripts": {
