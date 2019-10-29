@@ -7,16 +7,13 @@ class Map extends React.Component {
     super(props);
     this.state = {
       x: 12,
-      y: 6,
+      y: 4,
       transition: true
     };
     this.loopObstacle();
   }
 
   carte = [
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -36,7 +33,7 @@ class Map extends React.Component {
         transition: true
       });
     }
-    setTimeout(this.loopObstacle.bind(this), 250);
+    setTimeout(this.loopObstacle.bind(this), 100);
   }
 
   render() {
