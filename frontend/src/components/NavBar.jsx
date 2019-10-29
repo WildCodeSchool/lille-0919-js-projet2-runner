@@ -1,7 +1,7 @@
 import React from "react";
 import "./NavBar.scss";
 
-function Nav_bar() {
+function Navbar() {
   return (
     <header>
       <div className="navBar">
@@ -20,4 +20,4 @@ function Nav_bar() {
     </header>
   );
 }
-export default Nav_bar;
+export default Navbar;
