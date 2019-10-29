@@ -5,8 +5,8 @@ function LeaderBoard() {
   return (
     <div className="leaderBoard">
       <div className="leaderBoardTitle">
-        <img src="players_title.png" alt="Players Title" />
-        <img src="score_title.png" alt="Score Title" />
+        <img src="player_icon.png" alt="Players Title" />
+        <img src="score_icon.png" alt="Score Title" />
       </div>
       <div className="leaderBoardItems">
         <ol>
