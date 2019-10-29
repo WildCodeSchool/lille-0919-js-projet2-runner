@@ -1,5 +1,6 @@
 import React from "react";
 import "./Contact.scss";
+import Popup from "reactjs-popup";
 
 class Contact extends React.Component {
   constructor(props) {
@@ -64,9 +65,20 @@ class Contact extends React.Component {
           id="message"
         />
 
-        <div id="sendButton">
-          <img src="send_button.png" alt="sendButton" />
-        </div>
+        <Popup
+          trigger={
+            <div id="sendButton">
+              <img src="send_button.png" alt="sendButton" />
+            </div>
+          }
+          modal
+        >
+          {close => (
+            <div id="content">
+              <p>Your E-mail was send with Success!</p>
+            </div>
+          )}
+        </Popup>
       </form>
     );
   }

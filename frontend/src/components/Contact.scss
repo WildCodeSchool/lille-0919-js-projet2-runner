@@ -3,14 +3,12 @@
   --rose: rgba(234, 0, 150, 1);
   --bleu: rgba(125, 249, 255, 1);
   --bleuT: rgba(125, 249, 255, 0);
-  font-family: "Roboto black";
-  background: rgba(0, 5, 16, 1);
 }
 
 form {
   width: 50vw;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 48px;
 
   .top-form {
     display: flex;
@@ -28,11 +26,6 @@ form {
     border-bottom: transparent;
     border-right: transparent;
     padding: 5px;
-    font-weight: bold;
-
-    #object {
-      font-weight: bold;
-    }
   }
 
   #email {
@@ -77,5 +70,18 @@ form {
 
   img:hover {
     transform: scale(1);
+  }
+}
+
+#content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+
+  p {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
   }
 }
