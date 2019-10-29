@@ -1,11 +1,11 @@
 import React from "react";
 import "./components/reset.css";
-import Game from "./components/Game";
+import Map from "./components/Map";
 
 function App() {
   return (
     <div className="App">
-      <Game />
+      <Map />
     </div>
   );
 }
