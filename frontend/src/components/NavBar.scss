@@ -1,0 +1,17 @@
+header {
+  display: flex;
+  justify-content: center;
+
+  .navBar {
+    display: flex;
+    justify-content: space-around;
+    width: 75vw;
+    img {
+      transform: scale(0.95);
+      height: 50%;
+    }
+    img:hover {
+      transform: scale(1);
+    }
+  }
+}
