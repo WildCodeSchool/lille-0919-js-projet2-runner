@@ -13,7 +13,7 @@ class Obstacles extends React.Component {
         style={{
           top: `${this.props.y * 64}px`,
           left: `${this.props.x * 64}px`,
-          transitionDuration: `${this.props.transition ? "300ms" : "0ms"}`
+          transitionDuration: `${this.props.transition ? "250ms" : "0ms"}`
         }}
       ></div>
     );
