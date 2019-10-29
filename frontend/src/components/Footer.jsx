@@ -1,5 +1,7 @@
 import React from "react";
 import "./Footer.scss";
+import Popup from "reactjs-popup";
+
 function Footer() {
   return (
     <footer>
@@ -8,12 +10,24 @@ function Footer() {
         <div>
           <ul className="nav">
             <li>Copyright © 2019</li>
-            <li>
-              Made with <span className="heart">♥</span>
-            </li>
-            <li>Mentions légales</li>
-            <li>Confidentialité</li>
-            <li>Cookies</li>
+
+            <Popup trigger={<li id="mentions">Mentions légales</li>} modal>
+              {close => (
+                <div className="modal">
+                  <div className="content">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Corporis modi sunt vel explicabo cumque voluptatem sint
+                      magnam dolores incidunt, facilis totam pariatur quibusdam
+                      doloremque ut recusandae vitae maiores reprehenderit esse.
+                    </p>
+                  </div>
+                </div>
+              )}
+            </Popup>
+            <a href="https://www.wildcodeschool.com/fr-FR">
+              <li>By Wild Code School</li>
+            </a>
           </ul>
         </div>
 

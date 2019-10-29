@@ -3,8 +3,6 @@
   --rose: rgba(234, 0, 150, 1);
   --bleu: rgba(125, 249, 255, 1);
   --bleuT: rgba(125, 249, 255, 0);
-  font-family: "Roboto black";
-  background: rgba(0, 5, 16, 1);
 }
 /*ligne dégradé */
 .LinearGradient {
@@ -21,6 +19,7 @@
 
 .footer {
   display: flex;
+  position: fixed;
   flex-direction: row;
   justify-content: space-between;
   color: white;
@@ -31,10 +30,10 @@
     justify-content: space-around;
     align-items: center;
     width: 85vw;
-  }
-  .heart {
-    color: rgba(241, 61, 55, 1);
-    font-size: 1.5em;
+    a {
+      text-decoration: none;
+      color: white;
+    }
   }
 
   .facebook-logo,
@@ -48,4 +47,7 @@
   .twitter-logo:hover {
     transform: scale(1);
   }
+}
+#mentions {
+  cursor: pointer;
 }
