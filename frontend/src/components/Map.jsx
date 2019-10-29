@@ -7,7 +7,7 @@ class Map extends React.Component {
     super(props);
     this.state = {
       x: 2,
-      y: 3
+      y: 4
     };
   }
 
@@ -18,21 +18,22 @@ class Map extends React.Component {
   }
 
   getInput = event => {
-    const keyCode = event.keyCode;
-    if (keyCode === 32) {
+    const key = event.code;
+    console.log(event.code);
+    if (key === "Space") {
       this.setState({ y: 0.5 });
       setTimeout(() => {
-        this.setState({ y: 3 });
+        this.setState({ y: 4 });
       }, 300);
     }
   };
 
   carte = [
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    ["", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+    ["", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+    ["", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+    ["", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+    ["", "", "", "", "", "", "", "", "", "", "", "", "", ""]
   ];
 
   render() {
