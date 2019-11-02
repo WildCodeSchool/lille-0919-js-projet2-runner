@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@font-face {
+  font-family: "Pixeled";
+  src: local("Pixeled"), url(./fonts/Pixeled.ttf) format("truetype");
+}
