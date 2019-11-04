@@ -1,5 +1,5 @@
 import React from "react";
-import "./Contact.scss";
+import "./style/Contact.scss";
 
 class Contact extends React.Component {
   constructor(props) {
