@@ -26,7 +26,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: end;
-  color: white;
+  color: rgba(255, 255, 255);
   height: 10vh;
   font-weight: bold;
   font-size: 1.4em;
@@ -42,7 +42,7 @@
   }
   a {
     text-decoration: none;
-    color: white;
+    color: rgba(255, 255, 255);
   }
 
   .facebook-logo,
@@ -63,7 +63,7 @@
 .content {
   height: 25vh;
   p {
-    color: white;
+    color: rgba(255, 255, 255);
     font-weight: bold;
   }
 }
