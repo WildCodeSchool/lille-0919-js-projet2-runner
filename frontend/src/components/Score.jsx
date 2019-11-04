@@ -1,5 +1,5 @@
 import React from "react";
-import "./Score.scss";
+import "./style/Score.scss";
 
 class Score extends React.Component {
   constructor(props) {
