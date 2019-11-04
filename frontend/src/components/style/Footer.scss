@@ -21,9 +21,13 @@
 
 .footer {
   display: flex;
+  position: fixed;
+  max-height: 3%;
   flex-direction: row;
   justify-content: space-between;
+  align-items: end;
   color: white;
+  height: 10vh;
   font-weight: bold;
   font-size: 1.4em;
   .nav {
@@ -32,6 +36,9 @@
     justify-content: space-around;
     align-items: center;
     width: 85vw;
+  }
+  .logo {
+    display: flex;
   }
   a {
     text-decoration: none;

@@ -29,7 +29,7 @@ function Footer() {
           </ul>
         </div>
 
-        <div>
+        <div className="logo">
           <img
             src="facebook_icon.png"
             className="facebook-logo"
