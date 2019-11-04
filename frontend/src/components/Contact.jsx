@@ -36,7 +36,7 @@ class Contact extends React.Component {
             onChange={event => {
               this.setState({ input: event.target.value });
             }}
-            placeholder="Your email address...."
+            placeholder="Your e-mail address...."
             id="email"
           />
 
@@ -77,7 +77,7 @@ class Contact extends React.Component {
           {close => (
             <div className="modal">
               <div className="content">
-                <span>Your E-mail was send with Success!</span>
+                <span>Your e-mail was send with success!</span>
               </div>
             </div>
           )}
