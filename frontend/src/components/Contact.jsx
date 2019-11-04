@@ -1,6 +1,6 @@
 import React from "react";
 import "./style/Contact.scss";
-
+import Popup from "reactjs-popup";
 class Contact extends React.Component {
   constructor(props) {
     super(props);
@@ -11,10 +11,6 @@ class Contact extends React.Component {
       select: "object",
       textarea: ""
     };
-
-    this.handleTextarea = this.handleTextarea.bind(this);
-    this.handleInput = this.handleInput.bind(this);
-    this.handleSelect = this.handleSelect.bind(this);
   }
   // function to display the user input in textarea for message *******************
   handleTextarea(event) {
@@ -36,15 +32,19 @@ class Contact extends React.Component {
         <div className="top-form">
           <input
             type="email"
-            value={this.state.value}
-            onChange={this.handleInput}
+            value={this.state.input}
+            onChange={event => {
+              this.setState({ input: event.target.value });
+            }}
             placeholder="Your email address...."
             id="email"
           />
 
           <select
             value={this.state.select}
-            onChange={this.handleSelect}
+            onChange={event => {
+              this.setState({ select: event.target.value });
+            }}
             id="select"
           >
             <option value="object" id="object">
@@ -59,14 +59,29 @@ class Contact extends React.Component {
         <textarea
           type="text"
           value={this.state.textarea}
-          onChange={this.handleTextarea}
+          onChange={event => {
+            this.setState({ textarea: event.target.value });
+          }}
           placeholder="Your message...."
           id="message"
         />
 
-        <div id="sendButton">
-          <img src="send_button.png" alt="sendButton" />
-        </div>
+        <Popup
+          trigger={
+            <div id="sendButton">
+              <img src="send_button.png" alt="sendButton" />
+            </div>
+          }
+          modal
+        >
+          {close => (
+            <div className="modal">
+              <div className="content">
+                <span>Your E-mail was send with Success!</span>
+              </div>
+            </div>
+          )}
+        </Popup>
       </form>
     );
   }
