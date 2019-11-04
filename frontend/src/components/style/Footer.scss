@@ -27,25 +27,36 @@
   font-weight: bold;
   font-size: 1.4em;
   .nav {
+    margin-top: 15px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 85vw;
   }
-  .heart {
-    color: rgba(241, 61, 55, 1);
-    font-size: 1.5em;
+  a {
+    text-decoration: none;
+    color: white;
   }
 
   .facebook-logo,
   .insta-logo,
   .twitter-logo {
-    transform: scale(0.9);
+    transform: scale(0.95);
     height: 80%;
   }
   .facebook-logo:hover,
   .insta-logo:hover,
   .twitter-logo:hover {
     transform: scale(1);
+  }
+}
+#mentions {
+  cursor: pointer;
+}
+.content {
+  height: 25vh;
+  p {
+    color: white;
+    font-weight: bold;
   }
 }
