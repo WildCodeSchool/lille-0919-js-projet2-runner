@@ -11,7 +11,7 @@ function Footer() {
             <li>Copyright © 2019</li>
             <Popup trigger={<li id="mentions">Mentions légales</li>} modal>
               {close => (
-                <div className="modal">
+                <div id="modal">
                   <div id="content">
                     <h2>Editeur du Site :</h2>
                     <ul>

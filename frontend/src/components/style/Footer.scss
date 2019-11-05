@@ -21,7 +21,7 @@
 
 .footer {
   display: flex;
-
+  position: fixed;
   max-height: 3%;
   flex-direction: row;
 
@@ -61,30 +61,45 @@
 #mentions {
   cursor: pointer;
 }
-#content {
-  display: flex;
-  flex-direction: column;
-  height: 95vh;
-  font-size: 0.9em;
-  font-weight: 400;
-  margin: 0 20px;
-  h2,
-  h3 {
-    text-align: center;
-    font-weight: bold;
-  }
-  .LinearGradientModal {
-    background: linear-gradient(
-      to right,
-      var(--roseT),
-      var(--rose),
-      var(--bleu),
-      var(--bleuT)
-    );
-    width: 40vw;
-    height: 3px;
-  }
-  p {
-    color: rgba(255, 255, 255, 1);
+.popup-content {
+  background: linear-gradient(
+    to right,
+    var(--roseT),
+    var(--rose),
+    var(--bleu),
+    var(--bleuT)
+  ) !important;
+  border-radius: 30px !important;
+}
+#modal {
+  border-radius: 30px;
+  #content {
+    display: flex;
+    flex-direction: column;
+    height: 98vh;
+    font-size: 0.9em;
+    font-weight: 400;
+    margin: 0 20px;
+
+    h2,
+    h3 {
+      margin: 2px;
+      text-align: center;
+      font-weight: bold;
+    }
+    .LinearGradientModal {
+      background: linear-gradient(
+        to right,
+        var(--roseT),
+        var(--rose),
+        var(--bleu),
+        var(--bleuT)
+      );
+      width: 40vw;
+      height: 3px;
+    }
+    p {
+      color: rgba(255, 255, 255, 1);
+    }
   }
 }
