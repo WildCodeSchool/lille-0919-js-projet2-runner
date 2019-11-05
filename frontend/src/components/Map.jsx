@@ -1,32 +1,23 @@
 import React from "react";
 import "./style/Map.scss";
 import Character from "./Character";
+import EnnemyFly from "./EnnemyFly";
+import EnnemyRun from "./EnnemyRun";
 
 class Map extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      x: 2,
-      y: 4
+      xC: 2,
+      yC: 4,
+      canJump: true,
+      transition: true,
+      xER: 12,
+      yER: 3.85,
+      xEF: 15,
+      yEF: 2.75
     };
   }
-
-  componentDidMount() {
-    window.onkeydown = event => {
-      this.getInput(event);
-    };
-  }
-
-  getInput = event => {
-    const key = event.code;
-    console.log(event.code);
-    if (key === "Space") {
-      this.setState({ y: 0.5 });
-      setTimeout(() => {
-        this.setState({ y: 4 });
-      }, 300);
-    }
-  };
 
   carte = [
     ["", "", "", "", "", "", "", "", "", "", "", "", "", ""],
@@ -36,15 +27,83 @@ class Map extends React.Component {
     ["", "", "", "", "", "", "", "", "", "", "", "", "", ""]
   ];
 
+  componentDidMount() {
+    window.onkeydown = event => {
+      this.getInput(event);
+    };
+    this.loopEnnemyRun();
+    this.loopEnnemyFly();
+  }
+
+  loopEnnemyFly() {
+    if (this.state.xEF === -2) {
+      this.setState({
+        xEF: this.state.xEF + 17,
+        transition: false
+      });
+    } else {
+      this.setState({
+        xEF: this.state.xEF - 1,
+        transition: true
+      });
+    }
+    setTimeout(this.loopEnnemyFly.bind(this), 300);
+  }
+
+  loopEnnemyRun() {
+    if (this.state.xER === -2) {
+      this.setState({
+        xER: this.state.xER + 15,
+        transition: false
+      });
+    } else {
+      this.setState({
+        xER: this.state.xER - 1,
+        transition: true
+      });
+    }
+    setTimeout(this.loopEnnemyRun.bind(this), 250);
+  }
+
+  getInput = event => {
+    const key = event.code;
+    if (key === "Space" && this.state.canJump) {
+      this.setState({
+        yC: 2,
+        canJump: false
+      });
+      setTimeout(() => {
+        this.setState({
+          yC: 3.92
+        });
+      }, 300);
+      setTimeout(() => {
+        this.setState({
+          canJump: true
+        });
+      }, 600);
+    }
+  };
+
   render() {
     return (
-      <div className="map">
+      <div id="map">
         {this.carte.map(row =>
           row.map(column => {
             return <div></div>;
           })
         )}
-        <Character x={this.state.x} y={this.state.y} />
+        <Character x={this.state.xC} y={this.state.yC} />
+        <EnnemyRun
+          x={this.state.xER}
+          y={this.state.yER}
+          transition={this.state.transition}
+        />
+        <EnnemyFly
+          x={this.state.xEF}
+          y={this.state.yEF}
+          transition={this.state.transition}
+        />
       </div>
     );
   }
