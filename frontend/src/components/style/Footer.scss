@@ -21,15 +21,16 @@
 
 .footer {
   display: flex;
-  position: fixed;
+
   max-height: 3%;
   flex-direction: row;
-  justify-content: space-between;
+
   align-items: end;
   color: rgba(255, 255, 255, 1);
   height: 10vh;
   font-weight: bold;
   font-size: 1.4em;
+
   .nav {
     margin-top: 15px;
     display: flex;
@@ -60,10 +61,30 @@
 #mentions {
   cursor: pointer;
 }
-.content {
-  height: 25vh;
+#content {
+  display: flex;
+  flex-direction: column;
+  height: 95vh;
+  font-size: 0.9em;
+  font-weight: 400;
+  margin: 0 20px;
+  h2,
+  h3 {
+    text-align: center;
+    font-weight: bold;
+  }
+  .LinearGradientModal {
+    background: linear-gradient(
+      to right,
+      var(--roseT),
+      var(--rose),
+      var(--bleu),
+      var(--bleuT)
+    );
+    width: 40vw;
+    height: 3px;
+  }
   p {
     color: rgba(255, 255, 255, 1);
-    font-weight: bold;
   }
 }
