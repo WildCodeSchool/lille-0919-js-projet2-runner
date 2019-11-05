@@ -33,6 +33,12 @@ class Map extends React.Component {
     };
     this.loopEnnemyRun();
     this.loopEnnemyFly();
+    setInterval(() => {
+      this.loopEnnemyRun();
+    }, 250);
+    setInterval(() => {
+      this.loopEnnemyFly();
+    }, 300);
   }
 
   loopEnnemyFly() {
@@ -47,7 +53,6 @@ class Map extends React.Component {
         transition: true
       });
     }
-    setTimeout(this.loopEnnemyFly.bind(this), 300);
   }
 
   loopEnnemyRun() {
@@ -62,7 +67,6 @@ class Map extends React.Component {
         transition: true
       });
     }
-    setTimeout(this.loopEnnemyRun.bind(this), 250);
   }
 
   getInput = event => {
