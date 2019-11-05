@@ -1,5 +1,5 @@
 import React from "react";
-import "./Map.scss";
+import "./style/Map.scss";
 import Character from "./Character";
 
 class Map extends React.Component {

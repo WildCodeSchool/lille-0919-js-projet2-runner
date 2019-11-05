@@ -4,13 +4,13 @@
   --bleu: rgba(125, 249, 255, 1);
   --bleuT: rgba(125, 249, 255, 0);
   font-family: "Roboto black";
-  background: rgba(0, 5, 16, 1);
+  background-color: rgba(0, 0, 6, 1);
 }
 
 form {
   width: 50vw;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 48px;
 
   .top-form {
     display: flex;
@@ -77,5 +77,16 @@ form {
 
   img:hover {
     transform: scale(1);
+  }
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25vh;
+  span {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
   }
 }
