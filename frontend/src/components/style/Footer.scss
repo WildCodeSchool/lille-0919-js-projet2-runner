@@ -24,12 +24,13 @@
   position: fixed;
   max-height: 3%;
   flex-direction: row;
-  justify-content: space-between;
+
   align-items: end;
   color: rgba(255, 255, 255, 1);
   height: 10vh;
   font-weight: bold;
   font-size: 1.4em;
+
   .nav {
     margin-top: 15px;
     display: flex;
@@ -60,10 +61,45 @@
 #mentions {
   cursor: pointer;
 }
-.content {
-  height: 25vh;
-  p {
-    color: rgba(255, 255, 255, 1);
-    font-weight: bold;
+.popup-content {
+  background: linear-gradient(
+    to right,
+    var(--roseT),
+    var(--rose),
+    var(--bleu),
+    var(--bleuT)
+  ) !important;
+  border-radius: 30px !important;
+}
+#modal {
+  border-radius: 30px;
+  #content {
+    display: flex;
+    flex-direction: column;
+    height: 98vh;
+    font-size: 0.9em;
+    font-weight: 400;
+    margin: 0 20px;
+
+    h2,
+    h3 {
+      margin: 2px;
+      text-align: center;
+      font-weight: bold;
+    }
+    .LinearGradientModal {
+      background: linear-gradient(
+        to right,
+        var(--roseT),
+        var(--rose),
+        var(--bleu),
+        var(--bleuT)
+      );
+      width: 40vw;
+      height: 3px;
+    }
+    p {
+      color: rgba(255, 255, 255, 1);
+    }
   }
 }
