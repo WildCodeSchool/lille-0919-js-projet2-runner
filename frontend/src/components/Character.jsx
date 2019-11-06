@@ -1,7 +1,7 @@
 import React from "react";
 import "./style/Character.scss";
 
-function Character(props) {
+const Character = props => {
   return (
     <div
       className="character"
@@ -11,6 +11,6 @@ function Character(props) {
       }}
     ></div>
   );
-}
+};
 
 export default Character;
