@@ -1,8 +1,8 @@
 import React from "react";
 import "./style/Map.scss";
 import Character from "./Character";
-import EnnemyFly from "./EnnemyFly";
-import EnnemyRun from "./EnnemyRun";
+import EnemyFly from "./EnemyFly";
+import EnemyRun from "./EnemyRun";
 
 class Map extends React.Component {
   constructor(props) {
@@ -31,17 +31,17 @@ class Map extends React.Component {
     window.onkeydown = event => {
       this.getInput(event);
     };
-    this.loopEnnemyRun();
-    this.loopEnnemyFly();
+    this.loopEnemyRun();
+    this.loopEnemyFly();
     setInterval(() => {
-      this.loopEnnemyRun();
+      this.loopEnemyRun();
     }, 250);
     setInterval(() => {
-      this.loopEnnemyFly();
+      this.loopEnemyFly();
     }, 300);
   }
 
-  loopEnnemyFly() {
+  loopEnemyFly() {
     if (this.state.xEF === -2) {
       this.setState({
         xEF: this.state.xEF + 17,
@@ -55,7 +55,7 @@ class Map extends React.Component {
     }
   }
 
-  loopEnnemyRun() {
+  loopEnemyRun() {
     if (this.state.xER === -2) {
       this.setState({
         xER: this.state.xER + 15,
@@ -98,12 +98,12 @@ class Map extends React.Component {
           })
         )}
         <Character x={this.state.xC} y={this.state.yC} />
-        <EnnemyRun
+        <EnemyRun
           x={this.state.xER}
           y={this.state.yER}
           transition={this.state.transition}
         />
-        <EnnemyFly
+        <EnemyFly
           x={this.state.xEF}
           y={this.state.yEF}
           transition={this.state.transition}
