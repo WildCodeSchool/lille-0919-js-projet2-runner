@@ -4,9 +4,9 @@ import Popup from "reactjs-popup";
 function Footer() {
   return (
     <footer>
-      <div className="LinearGradient"></div>
       <div className="footer">
         <div>
+          <div className="LinearGradient"></div>
           <ul className="nav">
             <li>Copyright © 2019</li>
             <Popup trigger={<li id="mentions">Mentions légales</li>} modal>
@@ -26,21 +26,24 @@ function Footer() {
             <a href="https://www.wildcodeschool.com/fr-FR">
               <li>By Wild Code School</li>
             </a>
+            <logo>
+              <img
+                src="facebook_icon.png"
+                className="facebook-logo"
+                alt="Facebook logo"
+              />
+              <img
+                src="insta_icon.png"
+                className="insta-logo"
+                alt="Insta logo"
+              />
+              <img
+                src="twitter_icon.png"
+                className="twitter-logo"
+                alt="Twitter logo"
+              />
+            </logo>
           </ul>
-        </div>
-
-        <div className="logo">
-          <img
-            src="facebook_icon.png"
-            className="facebook-logo"
-            alt="Facebook logo"
-          />
-          <img src="insta_icon.png" className="insta-logo" alt="Insta logo" />
-          <img
-            src="twitter_icon.png"
-            className="twitter-logo"
-            alt="Twitter logo"
-          />
         </div>
       </div>
     </footer>

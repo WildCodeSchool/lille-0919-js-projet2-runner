@@ -22,24 +22,22 @@
 .footer {
   display: flex;
   position: fixed;
-  max-height: 3%;
-  flex-direction: row;
+
+  flex-direction: column;
   justify-content: space-between;
-  align-items: end;
   color: rgba(255, 255, 255, 1);
   height: 10vh;
   font-weight: bold;
   font-size: 1.4em;
+  bottom: 0;
   .nav {
     margin-top: 15px;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 85vw;
   }
-  .logo {
-    display: flex;
-  }
+
   a {
     text-decoration: none;
     color: rgba(255, 255, 255, 1);
@@ -49,7 +47,7 @@
   .insta-logo,
   .twitter-logo {
     transform: scale(0.95);
-    height: 80%;
+    height: 50%;
   }
   .facebook-logo:hover,
   .insta-logo:hover,
