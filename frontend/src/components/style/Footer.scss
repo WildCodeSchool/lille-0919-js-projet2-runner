@@ -21,8 +21,8 @@
 
 .footer {
   display: flex;
-  position: fixed;
-
+  position: absolute;
+  bottom: 0;
   flex-direction: column;
   justify-content: space-between;
   color: rgba(255, 255, 255, 1);
