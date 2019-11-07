@@ -77,14 +77,20 @@ form {
     transform: scale(1);
   }
 }
-.content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 25vh;
-  span {
-    color: white;
-    font-weight: bold;
-    font-size: 1.2em;
+#modalContact {
+  border-radius: 30px;
+  #contentContact {
+    display: flex;
+    border-radius: 40px !important;
+    padding: 10px !important;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+    span {
+      color: white;
+      font-weight: bold;
+      font-size: 1.2em;
+      border-radius: 40px;
+    }
   }
 }

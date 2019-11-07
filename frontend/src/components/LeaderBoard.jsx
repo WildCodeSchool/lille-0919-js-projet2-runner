@@ -1,6 +1,6 @@
 import React from "react";
 import "./style/LeaderBoard.scss";
-
+import axios from "axios";
 function LeaderBoard() {
   return (
     <div className="leaderBoard">
