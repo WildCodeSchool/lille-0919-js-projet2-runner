@@ -79,17 +79,26 @@ form {
 }
 #modalContact {
   border-radius: 30px;
+  #closeModalSend {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    right: 40px;
+    top: 20px;
+    font-size: 24px;
+    color: white;
+  }
   #contentContact {
     display: flex;
     border-radius: 40px !important;
     padding: 10px !important;
     align-items: center;
     justify-content: center;
-    height: 25vh;
+    height: 360px;
     span {
       color: white;
       font-weight: bold;
-      font-size: 1.2em;
+      font-size: 2em;
       border-radius: 40px;
     }
   }

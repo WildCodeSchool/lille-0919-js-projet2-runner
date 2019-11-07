@@ -12,6 +12,9 @@ function Footer() {
             <Popup trigger={<li id="mentions">Mentions légales</li>} modal>
               {close => (
                 <div id="modal">
+                  <a id="closeModal" onClick={close}>
+                    x
+                  </a>
                   <div id="content">
                     <h2>Editeur du Site :</h2>
                     <ul>

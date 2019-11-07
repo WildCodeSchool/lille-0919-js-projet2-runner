@@ -76,8 +76,12 @@ class Contact extends React.Component {
         >
           {close => (
             <div id="modalContact">
+              <a id="closeModalSend" onClick={close}>
+                x
+              </a>
               <div id="contentContact">
-                <span>Your e-mail was send with success!</span>
+                <a id="closeModal" onClick={close}></a>
+                <span>Your e-mail has been sent with success!</span>
               </div>
             </div>
           )}

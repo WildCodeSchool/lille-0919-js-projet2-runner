@@ -74,6 +74,33 @@
 }
 #modal {
   border-radius: 30px;
+  #closeModal {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    right: 40px;
+    top: 20px;
+    font-size: 24px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: none;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--rose);
+    border-radius: 15px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--bleu);
+    border-radius: 15px;
+    width: 10px;
+  }
   #content {
     display: flex;
     flex-direction: column;
@@ -81,6 +108,7 @@
     font-size: 0.8em;
     font-weight: 400;
     margin: 0 20px;
+    overflow: auto;
 
     h2,
     h3 {
@@ -102,6 +130,8 @@
       );
       width: 40vw;
       height: 3px;
+      padding: 1px;
+      margin: 3px auto;
     }
     p {
       color: rgba(255, 255, 255, 1);
