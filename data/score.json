@@ -1,0 +1,19 @@
+{
+  "highscores": [
+    {
+      "playerName": "Loic",
+      "score": 0,
+      "id": 1
+    },
+    {
+      "playerName": "Blandine",
+      "score": "100",
+      "id": 2
+    },
+    {
+      "id": 5,
+      "playerName": "Laurent",
+      "score": 9000000
+    }
+  ]
+}
