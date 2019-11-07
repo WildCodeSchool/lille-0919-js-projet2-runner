@@ -26,7 +26,7 @@ Au sein de la Wild Code School de lille.
 
 Installation:
 Pour le data utiliser la commande ci dessous:
-json-server --port 5000 score.json
+json-server --port 5000 score.json --watch
 Avant téléchager npm install -g json-server =)
 
 Pour le SCSS:
