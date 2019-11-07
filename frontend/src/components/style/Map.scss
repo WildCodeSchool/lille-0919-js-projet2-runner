@@ -1,17 +1,16 @@
-.map {
+#map {
   position: relative;
   display: flex;
   flex-flow: wrap row;
   width: 832px;
   height: 320px;
   border-radius: 30px;
-  margin: 25px auto;
-  background-color: aqua;
+  margin: 10px auto;
+  background-image: url("../assets/background.gif");
   overflow: hidden;
 
-  div {
+  #tile {
     width: 64px;
     height: 64px;
-    background-color: transparent;
   }
 }
