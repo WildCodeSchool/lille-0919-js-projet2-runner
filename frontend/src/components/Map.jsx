@@ -3,6 +3,7 @@ import "./style/Map.scss";
 import Character from "./Character";
 import EnemyFly from "./EnemyFly";
 import EnemyRun from "./EnemyRun";
+import Background from "./Background";
 
 class Map extends React.Component {
   constructor(props) {
@@ -94,9 +95,10 @@ class Map extends React.Component {
       <div id="map">
         {this.carte.map(row =>
           row.map(column => {
-            return <div></div>;
+            return <div className="tiles"></div>;
           })
         )}
+        <Background />
         <Character x={this.state.xC} y={this.state.yC} />
         <EnemyRun
           x={this.state.xER}
