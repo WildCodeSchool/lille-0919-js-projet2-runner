@@ -6,9 +6,6 @@ import EnemyRun from "./EnemyRun";
 import Score from "./Score";
 import PopIn from "./PopIn";
 
-import Score from "./Score";
-import PopIn from "./PopIn";
-
 
 class Map extends React.Component {
   constructor(props) {
