@@ -7,12 +7,10 @@ import EnemyRun from "./EnemyRun";
 import Score from "./Score";
 import PopIn from "./PopIn";
 
-
 class Map extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-
       xC: 1.7,
       yC: 4,
       canJump: true,
@@ -26,7 +24,6 @@ class Map extends React.Component {
       showModal: false,
       scoreIncrement: null,
       debug: false
-
     };
   }
 
@@ -46,7 +43,6 @@ class Map extends React.Component {
     this.loopEnemyFly();
     setInterval(() => {
       this.loopEnemyRun();
-
     }, 300);
     setInterval(() => {
       this.loopEnemyFly();
@@ -59,7 +55,6 @@ class Map extends React.Component {
     this.setState({
       scoreIncrement
     });
-
   }
 
   loopEnemyFly() {
@@ -68,7 +63,6 @@ class Map extends React.Component {
         xEF: this.state.xEF + 17,
         transition: false
       });
-
     } else if (this.state.xEF === 2 && this.state.yC < this.state.yEF) {
       this.setState({
         xEF: 2,
@@ -78,8 +72,7 @@ class Map extends React.Component {
       });
       console.log("true");
       clearInterval(this.state.scoreIncrement);
-
-
+    }
   }
 
   loopEnemyRun() {
@@ -88,7 +81,6 @@ class Map extends React.Component {
         xER: this.state.xER + 15,
         transition: false
       });
-
     } else if (
       this.state.xER === 2 &&
       this.state.yC <= this.state.yER + this.state.heightC &&
@@ -101,14 +93,13 @@ class Map extends React.Component {
         showModal: true
       });
       clearInterval(this.state.scoreIncrement);
-
+    }
   }
 
   getInput = event => {
     const key = event.code;
     if (key === "Space" && this.state.canJump) {
       this.setState({
-
         yC: 2.4,
         canJump: false
       });
@@ -122,7 +113,6 @@ class Map extends React.Component {
           canJump: true
         });
       }, 700);
-
     }
   };
 
@@ -147,6 +137,7 @@ class Map extends React.Component {
         />
 
         <Score score={this.state.score} />
+        <audio src="ingame_music_cut.mp3" loop="loop" autoplay=""></audio>
         {this.state.debug && (
           <ul>
             <li>Player: {`${this.state.xC} ; ${this.state.yC}`}</li>
@@ -154,7 +145,6 @@ class Map extends React.Component {
             <li>Flyer: {`${this.state.xEF} ; ${this.state.yEF}`} </li>
           </ul>
         )}
-
       </div>
     );
   }
