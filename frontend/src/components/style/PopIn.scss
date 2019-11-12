@@ -30,15 +30,16 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 25vw;
+    width: 20vw;
     .playerName {
       margin: 15px;
       font-size: 2.4em;
       text-align: center;
       background-color: rgba(0, 0, 0, 0.5);
-      border: none;
+      border: transparent;
       color: white;
       text-transform: uppercase;
+
     }
     ::placeholder {
       color: white;
@@ -52,5 +53,6 @@
       border: none;
       border-radius: 15px;
     }
+
   }
 }
