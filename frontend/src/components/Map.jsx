@@ -6,6 +6,10 @@ import EnemyRun from "./EnemyRun";
 import Score from "./Score";
 import PopIn from "./PopIn";
 
+import Score from "./Score";
+import PopIn from "./PopIn";
+
+
 class Map extends React.Component {
   constructor(props) {
     super(props);
@@ -25,7 +29,6 @@ class Map extends React.Component {
       score: 0,
       showModal: false,
       scoreIncrement: null,
-      debug: true
     };
   }
 
@@ -73,7 +76,6 @@ class Map extends React.Component {
         score: this.state.score,
         showModal: true
       });
-      console.log("true");
       clearInterval(this.state.scoreIncrement);
     } else {
       this.setState({
@@ -157,13 +159,6 @@ class Map extends React.Component {
           durationTransition={this.state.durationTransition}
         />
         <Score score={this.state.score} />
-        {this.state.debug && (
-          <ul>
-            <li>Player: {`${this.state.xC} ; ${this.state.yC}`}</li>
-            <li>Runner: {`${this.state.xER} ; ${this.state.ER}`} </li>
-            <li>Flyer: {`${this.state.xEF} ; ${this.state.yEF}`} </li>
-          </ul>
-        )}
         {this.state.showModal && <PopIn score={this.state.score} />}
       </div>
     );

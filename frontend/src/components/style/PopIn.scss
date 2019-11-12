@@ -25,4 +25,33 @@
     color: var(--jaune);
     background-color: transparent;
   }
+  
+  form {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25vw;
+    .playerName {
+      margin: 15px;
+      font-size: 2.4em;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      border: none;
+      color: white;
+      text-transform: uppercase;
+    }
+    ::placeholder {
+      color: white;
+    }
+    a,
+    .send {
+      margin: 5px auto;
+      font-size: 1.2em;
+      background-color: rgba(0, 0, 0, 1);
+      color: white;
+      border: none;
+      border-radius: 15px;
+    }
+  }
 }

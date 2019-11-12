@@ -20,7 +20,6 @@ form {
   #select {
     width: 47%;
     height: 50px;
-    z-index: 4;
     background-color: white;
     border: solid 5px transparent;
     border-image: linear-gradient(50deg, var(--rose), var(--bleu));
@@ -38,7 +37,6 @@ form {
   #email {
     width: 45%;
     height: 35px;
-    z-index: 4;
     background-color: white;
     border: solid 5px transparent;
     border-image: linear-gradient(50deg, var(--rose), var(--bleu));
@@ -50,9 +48,9 @@ form {
 
   #message {
     width: -webkit-fill-available;
+    width: -moz-available;
     height: 150px;
     margin-top: 10px;
-    z-index: 4;
     background-color: white;
     border: solid 5px transparent;
     border-image: linear-gradient(100deg, var(--rose), var(--bleu));
