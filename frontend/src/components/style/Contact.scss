@@ -87,6 +87,7 @@ form {
     top: 20px;
     font-size: 24px;
     color: white;
+    background-color: rgba(0, 0, 6, 1);
   }
   #contentContact {
     display: flex;
@@ -95,6 +96,7 @@ form {
     align-items: center;
     justify-content: center;
     height: 360px;
+    background-color: rgba(0, 0, 6, 1);
     span {
       color: white;
       font-weight: bold;

@@ -109,6 +109,8 @@
     font-weight: 400;
     margin: 0 20px;
     overflow: auto;
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 15px;
 
     h2,
     h3 {
@@ -118,7 +120,7 @@
       font-weight: bold;
     }
     ul {
-      padding: 3px;
+      padding: 0 12px;
     }
 
     .LinearGradientModal {
@@ -136,6 +138,8 @@
     }
     p {
       color: rgba(255, 255, 255, 1);
+      padding: 0 12px;
+
     }
   }
 }
