@@ -8,7 +8,9 @@ const EnemyRun = props => {
       style={{
         top: `${props.y * 64}px`,
         left: `${props.x * 64}px`,
-        transitionDuration: `${props.transition ? "250ms" : "0ms"}`
+        transitionDuration: `${
+          props.transition ? `${props.durationTransition}ms` : "0ms"
+        }`
       }}
     ></div>
   );
