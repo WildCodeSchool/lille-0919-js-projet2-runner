@@ -2,7 +2,9 @@ import React from "react";
 import "./style/PopIn.scss";
 import axios from "axios";
 import { withRouter } from "react-router-dom";
+
 const MAX_LENGTH = 3;
+
 class PopIn extends React.Component {
   constructor(props) {
     super(props);
@@ -29,7 +31,7 @@ this.props.history.push("/leaderboard");
 
   render() {
     return (
-      <div id="modal">
+      <div id="modalGame">
         <h1>YOUR SCORE : {this.props.score}</h1>
         <form
           onSubmit={e => {
