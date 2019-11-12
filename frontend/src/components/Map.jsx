@@ -3,6 +3,7 @@ import "./style/Map.scss";
 import Character from "./Character";
 import EnemyFly from "./EnemyFly";
 import EnemyRun from "./EnemyRun";
+import Background from "./Background";
 
 import Score from "./Score";
 import PopIn from "./PopIn";
@@ -134,6 +135,7 @@ class Map extends React.Component {
             return <div className="tile"></div>;
           })
         )}
+        <Background />
         <Character x={this.state.xC} y={this.state.yC} />
         <EnemyRun
           x={this.state.xER}
