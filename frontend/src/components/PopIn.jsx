@@ -29,7 +29,7 @@ class PopIn extends React.Component {
 
   render() {
     return (
-      <div id="modal">
+      <div id="modalGame">
         <h1>YOUR SCORE : {this.props.score}</h1>
         <form
           onSubmit={e => {
