@@ -7,7 +7,6 @@ import Background from "./Background";
 import Score from "./Score";
 import PopIn from "./PopIn";
 
-
 class Map extends React.Component {
   constructor(props) {
     super(props);
@@ -44,6 +43,12 @@ class Map extends React.Component {
     };
     this.loopEnemyRun();
     this.loopEnemyFly();
+    setInterval(() => {
+      this.loopEnemyRun();
+    }, 300);
+    setInterval(() => {
+      this.loopEnemyFly();
+    }, 300);
     const scoreIncrement = setInterval(() => {
       if (this.state.score % 10 === 0) {
         this.setState({
@@ -67,6 +72,7 @@ class Map extends React.Component {
         xEF: this.state.xEF + 17,
         transition: false
       });
+    } else if (this.state.xEF === 2 && this.state.yC < this.state.yEF) {
     } else if (this.state.xEF === 2 && this.state.yC <= this.state.yEF) {
       this.setState({
         xEF: 2,
@@ -75,6 +81,7 @@ class Map extends React.Component {
         showModal: true
       });
       clearInterval(this.state.scoreIncrement);
+    }
     } else {
       this.setState({
         xEF: this.state.xEF - 1,
@@ -104,6 +111,7 @@ class Map extends React.Component {
         showModal: true
       });
       clearInterval(this.state.scoreIncrement);
+    }
     } else {
       this.setState({
         xER: this.state.xER - 1,
@@ -158,6 +166,7 @@ class Map extends React.Component {
           durationTransition={this.state.durationTransition}
         />
         <Score score={this.state.score} />
+        <audio src="ingame_music_cut.mp3" loop="loop" autoplay=""></audio>
         {this.state.showModal && <PopIn score={this.state.score} />}
       </div>
     );
