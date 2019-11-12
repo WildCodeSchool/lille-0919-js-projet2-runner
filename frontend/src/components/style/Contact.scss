@@ -10,7 +10,7 @@
 form {
   width: 50vw;
   margin: auto;
-  margin-top: 48px;
+  margin: 7vh auto;
 
   .top-form {
     display: flex;
@@ -77,14 +77,29 @@ form {
     transform: scale(1);
   }
 }
-.content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 25vh;
-  span {
+#modalContact {
+  border-radius: 30px;
+  #closeModalSend {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    right: 40px;
+    top: 20px;
+    font-size: 24px;
     color: white;
-    font-weight: bold;
-    font-size: 1.2em;
+  }
+  #contentContact {
+    display: flex;
+    border-radius: 40px !important;
+    padding: 10px !important;
+    align-items: center;
+    justify-content: center;
+    height: 360px;
+    span {
+      color: white;
+      font-weight: bold;
+      font-size: 2em;
+      border-radius: 40px;
+    }
   }
 }
