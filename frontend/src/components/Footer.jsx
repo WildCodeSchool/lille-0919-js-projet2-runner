@@ -48,8 +48,9 @@ function Footer() {
                       Internet explorer (dernières versions), Firefox, Google
                       Chrome, etc…
                     </p>
-                    <h3>Cookies :</h3> L'accès au site ainsi qu'aux services
-                    associés ne nécessitent aucun recours aux cookies.
+                    <h3>Cookies :</h3> 
+                    <p>L'accès au site ainsi qu'aux services
+                    associés ne nécessitent aucun recours aux cookies.</p>
                     <h3>Liens hypertextes :</h3>
                     <p>
                       Notre plateforme contient des liens vers d’autres sites
