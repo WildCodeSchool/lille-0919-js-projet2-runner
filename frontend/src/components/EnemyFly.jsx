@@ -8,7 +8,9 @@ const EnemyFly = props => {
       style={{
         top: `${props.y * 64}px`,
         left: `${props.x * 64}px`,
-        transitionDuration: `${props.transitionEF ? "200ms" : "0ms"}`
+        transitionDuration: `${
+          props.transitionEF ? `${props.durationTransition}ms` : "0ms"
+        }`
       }}
     ></div>
   );

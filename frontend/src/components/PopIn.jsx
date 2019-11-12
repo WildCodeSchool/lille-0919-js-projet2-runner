@@ -1,8 +1,10 @@
 import React from "react";
 import "./style/PopIn.scss";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { withRouter } from "react-router-dom";
+
 const MAX_LENGTH = 3;
+
 class PopIn extends React.Component {
   constructor(props) {
     super(props);
@@ -21,13 +23,15 @@ class PopIn extends React.Component {
   }
   handleSubmit(e) {
     e.preventDefault();
-
-    axios.post("http://localhost:5000/highscores", this.state);
+    axios.post("http://localhost:5000/highscores", this.state)
+    .then(({data})=>{
+this.props.history.push("/leaderboard");
+    })
   }
 
   render() {
     return (
-      <div id="modal">
+      <div id="modalGame">
         <h1>YOUR SCORE : {this.props.score}</h1>
         <form
           onSubmit={e => {
@@ -43,14 +47,14 @@ class PopIn extends React.Component {
             onChange={e => {
               this.handleChange(e);
             }}
+            required
           />
-          <Link to="/leaderboard">
+
             <input className="send" type="submit" value="Send !" />
-          </Link>
         </form>
       </div>
     );
   }
 }
 
-export default PopIn;
+export default withRouter(PopIn);
