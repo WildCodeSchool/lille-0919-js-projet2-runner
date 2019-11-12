@@ -1,0 +1,8 @@
+.ennemy {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  background-image: url("../assets/ennemyTwoFly.gif");
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}

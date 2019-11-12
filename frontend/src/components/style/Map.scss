@@ -1,4 +1,4 @@
-.map {
+#map {
   position: relative;
   display: flex;
   flex-flow: wrap row;
@@ -6,12 +6,10 @@
   height: 320px;
   border-radius: 30px;
   margin: 7vh auto;
-  background-color: aqua;
   overflow: hidden;
 
-  div {
+  #tile {
     width: 64px;
     height: 64px;
-    background-color: transparent;
   }
 }

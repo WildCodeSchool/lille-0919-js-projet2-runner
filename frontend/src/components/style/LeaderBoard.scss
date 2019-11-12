@@ -27,10 +27,11 @@
       align-self: center;
     }
   }
-
+  /*API*/
   .leaderBoardItems {
     width: 30%;
     ol {
+      color: white;
       width: 100%;
       counter-reset: my-awesome-counter;
       list-style: none;
@@ -46,7 +47,9 @@
         justify-content: space-between;
         align-items: center;
       }
-
+      .positionName {
+        text-transform: uppercase;
+      }
       .positionName::before {
         content: counter(my-awesome-counter);
         color: var(--white);
