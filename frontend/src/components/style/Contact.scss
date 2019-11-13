@@ -85,7 +85,9 @@ form {
     display: block;
     right: 40px;
     top: 20px;
-    font-size: 24px;
+    font-family: "Pixeled";
+    font-size: 1.4em;
+    font-weight: bold;
     color: white;
     background-color: rgba(0, 0, 6, 1);
   }
@@ -102,6 +104,7 @@ form {
       font-weight: bold;
       font-size: 2em;
       border-radius: 40px;
+      text-align: center;
     }
   }
 }
