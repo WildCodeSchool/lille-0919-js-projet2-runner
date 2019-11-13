@@ -15,7 +15,7 @@ class Map extends React.Component {
       yC: 4,
       canJump: true,
       transition: true,
-      durationTransition: 250,
+      durationTransition: 350,
       timerFly: 300,
       timerRun: 300,
       xER: 23,
