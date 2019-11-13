@@ -158,9 +158,9 @@ class Map extends React.Component {
         />
         <Score score={this.state.score} />
         {this.state.showModal ? (
-          <audio src="music_game_over.mp3" autoplay=""></audio>
+          <audio src="music_game_over.mp3" autoPlay></audio>
         ) : (
-          <audio src="ingame_music_cut.mp3" loop="loop" autoplay=""></audio>
+          <audio src="ingame_music_cut.mp3" loop autoPlay></audio>
         )}
         {this.state.showModal && <PopIn score={this.state.score} />}
       </div>
