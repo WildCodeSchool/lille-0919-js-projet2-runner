@@ -157,7 +157,11 @@ class Map extends React.Component {
           durationTransition={this.state.durationTransition}
         />
         <Score score={this.state.score} />
-        <audio src="ingame_music_cut.mp3" loop="loop" autoplay=""></audio>
+        {this.state.showModal ? (
+          <audio src="music_game_over.mp3" autoPlay></audio>
+        ) : (
+          <audio src="ingame_music_cut.mp3" loop autoPlay></audio>
+        )}
         {this.state.showModal && <PopIn score={this.state.score} />}
       </div>
     );
