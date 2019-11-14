@@ -65,7 +65,9 @@
     black,
     var(--rose),
     var(--bleu),
+
     black,
+
   ) !important;
   border-radius: 30px !important;
 
@@ -140,7 +142,6 @@
     p {
       color: rgba(255, 255, 255, 1);
       padding: 0 12px;
-
     }
   }
 }

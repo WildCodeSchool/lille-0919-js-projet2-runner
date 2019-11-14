@@ -32,7 +32,7 @@ class LeaderBoard extends React.Component {
               })
               .map(sc => {
                 return (
-                  <li>
+                  <li key={sc.id}>
                     <div className="positionName">{sc.playerName}</div>
                     <div>{sc.score}</div>
                   </li>
