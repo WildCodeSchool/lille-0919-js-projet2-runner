@@ -4,7 +4,7 @@
 Le site game over est un jeu (runner horizontale), c'est à dire un joueur sur un background et des ennemies qui défilent avec une action de saut pour les éviter. 
 
 ## Comment jouer? 
-Il suffit d'appuyer sur la barre d'espace pour faire sauter le personnage. Le jeu s'arrête quand il y a une collision. Au moment du Game over rentrez votre pseudos en 3 lettres puis quand vous appuyez sur "send" votre score est enregistré vous êtes redirigés sur la page Leaderboard seul les 3 meilleurs scores seront affichés. Vous pouvez également aller sur la contact page pour faire un retour aux développeurs. 
+Il suffit d'appuyer sur la barre d'espace pour faire sauter le personnage. Le jeu s'arrête quand il y a une collision. Au moment du Game over rentrez votre pseudos en 3 lettres puis quand vous appuyez sur "send" votre score est enregistré. Vous êtes redirigés sur la page Leaderboard, seul les 3 meilleurs scores seront affichés. Vous pouvez également aller sur la contact page pour faire un retour aux développeurs. 
 
 ## Language? 
 En REACT.JS - SCSS
