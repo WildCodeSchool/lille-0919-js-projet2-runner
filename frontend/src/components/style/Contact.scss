@@ -3,12 +3,14 @@
   --rose: rgba(234, 0, 150, 1);
   --bleu: rgba(125, 249, 255, 1);
   --bleuT: rgba(125, 249, 255, 0);
+  font-family: "Roboto black";
+  background-color: rgba(0, 0, 6, 1);
 }
 
 form {
   width: 50vw;
   margin: auto;
-  margin-top: 48px;
+  margin: 7vh auto;
 
   .top-form {
     display: flex;
@@ -18,7 +20,6 @@ form {
   #select {
     width: 47%;
     height: 50px;
-
     background-color: white;
     border: solid 5px transparent;
     border-image: linear-gradient(50deg, var(--rose), var(--bleu));
@@ -31,7 +32,6 @@ form {
   #email {
     width: 45%;
     height: 35px;
-
     background-color: white;
     border: solid 5px transparent;
     border-image: linear-gradient(50deg, var(--rose), var(--bleu));
@@ -43,9 +43,9 @@ form {
 
   #message {
     width: -webkit-fill-available;
+    width: -moz-available;
     height: 150px;
     margin-top: 10px;
-
     background-color: white;
     border: solid 5px transparent;
     border-image: linear-gradient(100deg, var(--rose), var(--bleu));
@@ -72,16 +72,37 @@ form {
     transform: scale(1);
   }
 }
-
-#content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50px;
-
-  p {
-    color: white;
+#modalContact {
+  border-radius: 30px;
+  #closeModalSend {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    right: 40px;
+    top: 20px;
+    font-family: "Pixeled";
+    font-size: 1.4em;
     font-weight: bold;
-    font-size: 1.2em;
+    color: white;
+    background-color: rgba(0, 0, 6, 1);
+    font-family: "Pixeled";
+  }
+
+  #contentContact {
+    display: flex;
+    border-radius: 40px !important;
+    padding: 10px !important;
+    align-items: center;
+    justify-content: center;
+    height: 360px;
+    background-color: rgba(0, 0, 6, 1);
+
+    span {
+      color: white;
+      font-weight: bold;
+      font-size: 2em;
+      border-radius: 40px;
+      text-align: center;
+    }
   }
 }

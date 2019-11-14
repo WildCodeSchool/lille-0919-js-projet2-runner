@@ -1,0 +1,15 @@
+#map {
+  position: relative;
+  display: flex;
+  flex-flow: wrap row;
+  width: 832px;
+  height: 320px;
+  border-radius: 30px;
+  margin: 7vh auto;
+  overflow: hidden;
+
+  .tile {
+    width: 64px;
+    height: 64px;
+  }
+}

@@ -1,0 +1,147 @@
+:root {
+  --roseT: rgba(234, 0, 150, 0);
+  --rose: rgba(234, 0, 150, 1);
+  --bleu: rgba(125, 249, 255, 1);
+  --bleuT: rgba(125, 249, 255, 0);
+  font-family: "Roboto black";
+  background-color: rgba(0, 0, 6, 1);
+}
+/*ligne dégradé */
+.LinearGradient {
+  background: linear-gradient(
+    to right,
+    var(--roseT),
+    var(--rose),
+    var(--bleu),
+    var(--bleuT)
+  );
+  width: 100vw;
+  height: 3px;
+}
+
+.footer {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+  font-size: 1.4em;
+
+  .nav {
+    margin: 10px auto 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .facebook-logo,
+  .insta-logo,
+  .twitter-logo {
+    transform: scale(0.95);
+    height: 50%;
+  }
+  .facebook-logo:hover,
+  .insta-logo:hover,
+  .twitter-logo:hover {
+    transform: scale(1);
+  }
+}
+
+#mentions {
+  cursor: pointer;
+}
+
+.popup-content {
+  background: linear-gradient(
+    to right,
+    black,
+    var(--rose),
+    var(--bleu),
+    black
+  ) !important;
+  border-radius: 30px !important;
+  padding: 8px !important;
+}
+
+#modal {
+  border-radius: 30px;
+
+  #closeModal {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    right: 40px;
+    top: 20px;
+    font-family: "Pixeled";
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: none;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--rose);
+    border-radius: 15px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--bleu);
+    border-radius: 15px;
+    width: 10px;
+  }
+
+  #content {
+    display: flex;
+    flex-direction: column;
+    height: 98vh;
+    font-size: 0.8em;
+    font-weight: 400;
+    margin: 0 20px;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 15px;
+
+    h2,
+    h3 {
+      padding: 8px;
+      margin: 6px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    ul {
+      padding: 0 12px;
+    }
+
+    .LinearGradientModal {
+      background: linear-gradient(
+        to right,
+        var(--roseT),
+        var(--rose),
+        var(--bleu),
+        var(--bleuT)
+      );
+      width: 40vw;
+      height: 3px;
+      padding: 1px;
+      margin: 3px auto;
+    }
+
+    p {
+      color: rgba(255, 255, 255, 1);
+      padding: 0 12px;
+    }
+  }
+}

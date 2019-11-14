@@ -1,0 +1,10 @@
+.character {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  background-image: url("../assets/player_run.gif");
+  transition: 0.3s;
+}
+div {
+  background-color: transparent;
+}
