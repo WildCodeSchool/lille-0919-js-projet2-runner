@@ -85,7 +85,9 @@ form {
     font-weight: bold;
     color: white;
     background-color: rgba(0, 0, 6, 1);
+    font-family: "Pixeled";
   }
+
   #contentContact {
     display: flex;
     border-radius: 40px !important;
@@ -94,6 +96,7 @@ form {
     justify-content: center;
     height: 360px;
     background-color: rgba(0, 0, 6, 1);
+
     span {
       color: white;
       font-weight: bold;
