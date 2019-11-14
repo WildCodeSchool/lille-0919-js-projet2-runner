@@ -18,7 +18,9 @@ Adrien Imberdis - Adwarf14/github<br/>
 Blandine Mallart - Harley Burton/github.
 
 ## Pour qui? 
-Le projet a été cré pour :
+Le projet a été cré pour : <br/>
+Steven Antal developpeur web chez IBM <br/>
+Nicolas Duhamel developpeur web chez IBM
 
 ## Combien de temps? 
 Le projet a été lancé le 14 octobre 2019 et c'est terminé le 15 novembre 2019.
@@ -28,12 +30,12 @@ Au sein de la Wild Code School de lille.
 
 ## Installation:
 ### Pour le data:
-lancer le serveur (dans le dossier data): <br/>
+Lancer le serveur (dans le dossier data): <br/>
 json-server --port 5000 score.json --watch <br/>
 Avant téléchager npm install -g json-server
 
 ### Pour le site:
-lancer le serveur (dans le dossier frontend):<br/>
+Lancer le serveur (dans le dossier frontend):<br/>
 npm start
 
 ### Pour le SCSS:
