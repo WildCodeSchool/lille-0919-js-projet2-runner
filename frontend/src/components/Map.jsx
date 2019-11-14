@@ -137,11 +137,11 @@ class Map extends React.Component {
   render() {
     return (
       <div id="map">
-        {this.carte.map(row =>
-          row.map(column => {
-            return <div className="tile"></div>;
-          })
-        )}
+        {this.carte.map((row, i) => {
+          return row.map((column, j) => {
+            return <div className="tile" key={`${i}${j}`}></div>;
+          });
+        })}
         <Background />
         <Character x={this.state.xC} y={this.state.yC} />
         <EnemyRun
