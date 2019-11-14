@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import LeaderBoard from "./components/LeaderBoard";
 import Contact from "./components/Contact";
 import { Switch, Route } from "react-router-dom";
+
 function App() {
   return (
     <div className="App">
