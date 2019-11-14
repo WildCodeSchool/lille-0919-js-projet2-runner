@@ -1,6 +1,7 @@
 import React from "react";
 import "./style/Contact.scss";
 import Popup from "reactjs-popup";
+
 class Contact extends React.Component {
   constructor(props) {
     super(props);
