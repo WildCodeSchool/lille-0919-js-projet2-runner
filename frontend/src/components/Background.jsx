@@ -163,7 +163,9 @@ class Background extends React.Component {
         element.x = 20;
         element.transition = false;
       }
+      return null;
     });
+    return null;
   };
 
   render() {
